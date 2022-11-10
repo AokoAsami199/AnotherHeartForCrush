@@ -99,7 +99,7 @@
                     q: ~~(rand() * heartPointsCount),
                     D: 2 * (i % 2) - 1,
                     force: 0.2 * rand() + 0.7,
-                    f: "hsla(0," + ~~(40 * rand() + 60) + "%," + ~~(60 * rand() + 20) + "%,.3)",
+                    f: "hsla(328, 100%, 54%)",
                     trace: []
                 };
                 for (var k = 0; k < traceCount; k++) e[i].trace[k] = { x: x, y: y };
@@ -155,7 +155,7 @@
                         ctx.fillRect(u.trace[k].x, u.trace[k].y, 1, 1);
                     }
                 }
-                //ctx.fillStyle = "rgba(255,255,255,1)";
+                //ctx.fillStyle = "rgba(255,255,255,1)"; 
                 //for (i = u.trace.length; i--;) ctx.fillRect(targetPoints[i][0], targetPoints[i][1], 2, 2);
 
                 window.requestAnimationFrame(loop, canvas);
@@ -169,3 +169,5 @@
     </script>
 </body>
 </html>
+
+//TODO
